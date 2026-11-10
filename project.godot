@@ -1,0 +1,24 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="Olivia Bot"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
+
+[display]
+
+window/size/viewport_width=920
+window/size/viewport_height=820
+window/stretch/mode="disabled"
+
+[dotnet]
+
+project/assembly_name="OliviaBot"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

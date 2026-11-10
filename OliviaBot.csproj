@@ -1,0 +1,16 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>OliviaBot</RootNamespace>
+    <AssemblyName>OliviaBot</AssemblyName>
+    <Nullable>enable</Nullable>
+    <!-- Keep this computer's folder paths out of the built DLL, since the app gets shared. -->
+    <PathMap>$(MSBuildProjectDirectory)=OliviaBot</PathMap>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Decodes animated GIFs into frames (Godot has no GIF loader). Windows only, like the app. -->
+    <PackageReference Include="System.Drawing.Common" Version="8.0.15" />
+  </ItemGroup>
+</Project>

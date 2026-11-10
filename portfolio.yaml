@@ -1,0 +1,48 @@
+# Portfolio metadata. Your portfolio site reads this file.
+# Validate by running /portfolio-sync (plugin: github.com/livscheck/portfolio-sync)
+
+# --- Required -------------------------------------------------------------
+title: Olivia Bot
+slug: olivia-bot
+tagline: A pink, iMessage-style desktop chat app where my friends can text an AI that texts like me
+type: ai                            # web | mobile | ai | embedded
+status: launched
+
+stack:
+  languages: [C#]
+  frameworks: [Godot 4.7, .NET 8]
+  tools: [System.Drawing, GitHub Releases]
+  services: [GIPHY API]
+  ai: [Claude Code CLI (headless)]
+
+media:
+  hero: media/hero.png
+  hero_alt: A pink chat window with light-pink and hot-pink message bubbles, a heart reaction on one message and a GIF reply, next to a sidebar of saved chats
+  gallery: media/gallery/
+
+# --- Optional -------------------------------------------------------------
+published: false
+featured: false
+platforms: [desktop]
+date_start: "11/09/2026"
+date_end: null
+last_updated: "11/10/2026"
+version_history:
+  - version: "1.0"
+    date: "11/10/2026"
+    summary: First public release for Windows
+tags: [desktop, chatbot, game-engine]
+
+links:
+  repo: https://github.com/livscheck/olivia-bot
+  demo: https://github.com/livscheck/olivia-bot/releases/latest
+  video: null
+  writeup: null
+
+# --- AI projects ----------------------------------------------------------
+ai:
+  models: [Claude (the friend's own Claude Code model)]
+  techniques: [persona prompting, structured output (JSON array of texts), vision on shared photos, simulated-conversation testing]
+  data: Only the open chat and persona.md. No files, email or other tools; the model runs with tools and MCP servers turned off.
+  evals: null                       # TODO add (optional): docs/portfolio/evals.md with a few vetted sample chats
+  prompts: persona.md

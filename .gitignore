@@ -1,0 +1,7 @@
+.godot/
+bin/
+obj/
+*.user
+giphy-key.txt
+example-convos.md
+Olivia Bot.cmd
